@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,21 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
+
 <body>
     <!-- Custom Cursor -->
     <div class="custom-cursor"></div>
     <div class="cursor-glow"></div>
-    
+
     <!-- Background Canvas -->
     <canvas id="bg-canvas"></canvas>
 
@@ -52,7 +56,7 @@
                     </a>
                 </div>
             </div>
-            
+
             <div class="scroll-indicator">
                 <div class="mouse">
                     <div class="wheel"></div>
@@ -67,34 +71,31 @@
                 <div class="section-header">
                     <h2><span class="text-glow accent">01.</span> Sobre Mim</h2>
                 </div>
-                
+
                 <div class="about-grid">
                     <!-- Nova área da Imagem / Foto -->
                     <div class="about-image glass-card">
                         <!-- Substitua o 'src' abaixo pelo caminho da sua foto -->
                         <!-- Ex: <img src="assets/minha-foto.jpg" alt="Foto de Perfil" class="avatar-placeholder"> -->
-                        <div style="padding: 2rem; text-align: center; color: var(--text-secondary); height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column;">
-                            <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 1rem;"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                            <p>Sua Foto Aqui</p>
-                            <span style="font-size: 0.8rem; opacity: 0.6; margin-top: 10px;">Substitua este bloco por uma tag &lt;img&gt; no index.html</span>
-                        </div>
+                        <img src="img/eu.png" alt="Foto de Perfil">
                     </div>
-
                     <div class="about-content-wrapper">
                         <div class="about-text glass-card">
-                            <p>Sou um desenvolvedor criativo especializado em construir experiências digitais modernas, visualmente impactantes e altamente interativas. Meu foco é mesclar estética com performance excepcional, expandindo os limites do que é possível na web.</p>
-                            <p>Movido pela curiosidade, pela paixão por UI/UX elegante e com um olhar diferenciado para o não convencional, crio produtos digitais que deixam uma marca duradoura.</p>
+                            <p>Sou um desenvolvedor criativo especializado em construir experiências digitais modernas,
+                                visualmente impactantes e altamente interativas. Meu foco é mesclar estética com
+                                performance excepcional, expandindo os limites do que é possível na web.</p>
+                            <p>Movido pela curiosidade, pela paixão por UI/UX elegante e com um olhar diferenciado para
+                                o não convencional, crio produtos digitais que deixam uma marca duradoura.</p>
                         </div>
-                        
+
                         <div class="tech-stack glass-card">
                             <h3>Tecnologias Principais</h3>
                             <div class="tags">
-                                <span class="tech-tag">JavaScript / ES6+</span>
-                                <span class="tech-tag">React / Next.js</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">React</span>
                                 <span class="tech-tag">TypeScript</span>
                                 <span class="tech-tag">HTML5 / CSS3</span>
                                 <span class="tech-tag">Three.js / WebGL</span>
-                                <span class="tech-tag">GSAP / Framer Motion</span>
                                 <span class="tech-tag">Tailwind CSS</span>
                                 <span class="tech-tag">Node.js</span>
                             </div>
@@ -110,118 +111,101 @@
                 <div class="section-header">
                     <h2><span class="text-glow accent">02.</span> Trabalhos em Destaque</h2>
                 </div>
-                
+
                 <div class="projects-grid">
                     <!-- Projeto 1 -->
                     <div class="project-card glass-card">
-                        <div class="project-img-wrapper">
-                            <div class="project-img bg-cyber"></div>
-                            <div class="project-overlay">
-                                <a href="#" class="view-btn">Ver Projeto</a>
-                            </div>
-                        </div>
                         <div class="project-info">
-                            <h3>E-Commerce Cyberpunk</h3>
-                            <p>Uma vitrine altamente interativa com pré-visualizações de produtos 3D e estética neon futurista.</p>
+                            <h3>Site de academia Kronos</h3>
+                            <p>Um site feito especialmente para atletas que desejam melhorar sua performance.</p>
                             <div class="project-tags">
-                                <span>React</span>
-                                <span>Three.js</span>
-                                <span>GSAP</span>
+                                <span>HTML5/CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div style="margin-top: 25px;">
+                                <a href="https://noahzzxr.github.io/Kronos-para-atletas/" class="view-btn"
+                                    style="transform: none; display: inline-block;">Ver Projeto</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Projeto 2 -->
                     <div class="project-card glass-card">
-                        <div class="project-img-wrapper">
-                            <div class="project-img bg-fintech"></div>
-                            <div class="project-overlay">
-                                <a href="#" class="view-btn">Ver Projeto</a>
-                            </div>
-                        </div>
                         <div class="project-info">
-                            <h3>Dashboard Nexus</h3>
-                            <p>Sistema robusto de visualização de dados com modo escuro estiloso e elementos de glassmorphism.</p>
+                            <h3>Site de links</h3>
+                            <p>Site para facilitar os meios de comunicação comigo.</p>
                             <div class="project-tags">
-                                <span>Next.js</span>
-                                <span>Tailwind</span>
-                                <span>Recharts</span>
+                                <span>HTML5/CSS3</span>
+                            </div>
+                            <div style="margin-top: 25px;">
+                                <a href="https://noahzzxr.github.io/noah-links/" class="view-btn"
+                                    style="transform: none; display: inline-block;">Ver Projeto</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Projeto 3 -->
                     <div class="project-card glass-card">
-                        <div class="project-img-wrapper">
-                            <div class="project-img bg-ai"></div>
-                            <div class="project-overlay">
-                                <a href="#" class="view-btn">Ver Projeto</a>
-                            </div>
-                        </div>
                         <div class="project-info">
-                            <h3>Plataforma Aura AI</h3>
-                            <p>Interface SaaS com manipulação de layout complexa e transições de estado fluidas totalmente integradas.</p>
+                            <h3>Noah Tattoo</h3>
+                            <p>Um site feito para tatuadores nos quais desejam atingir um publico maior.</p>
                             <div class="project-tags">
-                                <span>TypeScript</span>
-                                <span>React Node</span>
-                                <span>GraphQL</span>
+                                <span>HTML5/CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div style="margin-top: 25px;">
+                                <a href="https://noahzzxr.github.io/Noah-Tattoo/" class="view-btn"
+                                    style="transform: none; display: inline-block;">Ver Projeto</a>
                             </div>
                         </div>
                     </div>
-
                     <!-- Projeto 4 -->
                     <div class="project-card glass-card">
-                        <div class="project-img-wrapper">
-                            <div class="project-img bg-cyber" style="filter: hue-rotate(90deg);"></div>
-                            <div class="project-overlay">
-                                <a href="#" class="view-btn">Ver Projeto</a>
-                            </div>
-                        </div>
                         <div class="project-info">
-                            <h3>Portal Horizon</h3>
-                            <p>Uma experiência envolvente para usuários focada num design imersivo e navegação fluída sem recarregamento.</p>
+                            <h3>VetCare</h3>
+                            <p>Um site feito para clinicas veterinarias nas quais desejam ajudar mais animais e fazer a
+                                diferença.</p>
                             <div class="project-tags">
-                                <span>Vue.js</span>
-                                <span>Canvas API</span>
-                                <span>Framer</span>
+                                <span>HTML5/CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div style="margin-top: 25px;">
+                                <a href="https://noahzzxr.github.io/VetCare/" class="view-btn"
+                                    style="transform: none; display: inline-block;">Ver Projeto</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Projeto 5 -->
                     <div class="project-card glass-card">
-                        <div class="project-img-wrapper">
-                            <div class="project-img bg-fintech" style="filter: hue-rotate(-60deg);"></div>
-                            <div class="project-overlay">
-                                <a href="#" class="view-btn">Ver Projeto</a>
-                            </div>
-                        </div>
                         <div class="project-info">
-                            <h3>App de Finanças</h3>
-                            <p>App mobile-first de rastreamento de ganhos com animações de gráficos em tempo real e notificações.</p>
+                            <h3>Escoteiros Do Brasil</h3>
+                            <p>Site perfeito para escoteiros que desejam compartilhar suas experiências.</p>
                             <div class="project-tags">
-                                <span>React Native</span>
-                                <span>Expo</span>
-                                <span>D3.js</span>
+                                <span>HTML5/CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div style="margin-top: 25px;">
+                                <a href="https://noahzzxr.github.io/EscoteirosDoBrasil/" class="view-btn"
+                                    style="transform: none; display: inline-block;">Ver Projeto</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Projeto 6 -->
                     <div class="project-card glass-card">
-                        <div class="project-img-wrapper">
-                            <div class="project-img bg-ai" style="filter: hue-rotate(180deg);"></div>
-                            <div class="project-overlay">
-                                <a href="#" class="view-btn">Ver Projeto</a>
-                            </div>
-                        </div>
                         <div class="project-info">
-                            <h3>Agência Synth</h3>
-                            <p>Site institucional para uma agência de criação digital, focado em alta conversão e estética moderna.</p>
+                            <h3>Sistema Solar</h3>
+                            <p>Sistema solar interativo.</p>
                             <div class="project-tags">
                                 <span>HTML5</span>
-                                <span>SCSS</span>
-                                <span>GSAP</span>
+                                <span>CSS3</span>
+                                <span>Tailwind</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div style="margin-top: 25px;">
+                                <a href="https://noahzzxr.github.io/SistemaSolar/" class="view-btn"
+                                    style="transform: none; display: inline-block;">Ver Projeto</a>
                             </div>
                         </div>
                     </div>
@@ -235,27 +219,46 @@
                 <div class="section-header">
                     <h2><span class="text-glow accent">03.</span> Entrar em Contato</h2>
                 </div>
-                
+
                 <div class="contact-content glass-card">
                     <h3 class="contact-title">Vamos construir algo extraordinário</h3>
-                    <p class="contact-desc">Se você tem um projeto em mente, uma dúvida ou apenas quer dar um oi, minha caixa de entrada está sempre aberta. Tentarei o meu melhor para responder!</p>
-                    
+                    <p class="contact-desc">Se você tem um projeto em mente, uma dúvida ou apenas quer dar um oi, minha
+                        caixa de entrada está sempre aberta. Tentarei o meu melhor para responder!</p>
+
                     <a href="mailto:contato@noah.dev" class="btn primary-btn large-btn mt-4">
                         <span class="btn-text">Dizer Olá</span>
                         <div class="btn-glow"></div>
                     </a>
-                    
+
                     <div class="social-links mt-5">
-                        <a href="https://instagram.com" target="_blank" class="social-btn">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        <a href="https://www.instagram.com/noahtsnx/" target="_blank" class="social-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
                             <span>Instagram</span>
                         </a>
-                        <a href="https://tiktok.com" target="_blank" class="social-btn">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path><path d="M15 8v8a4 4 0 0 1-4 4"></path><path d="M15 4V4a5 5 0 0 0 5 5"></path></svg>
-                            <span>TikTok</span>
+                        <a href="https://www.linkedin.com/in/noah-ben-ariel-haddad-ferreira-257924349/" target="_blank"
+                            class="social-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                            <span>LinkedIn</span>
                         </a>
-                        <a href="https://github.com" target="_blank" class="social-btn">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        <a href="https://github.com/Noahzzxr" target="_blank" class="social-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
                             <span>GitHub</span>
                         </a>
                     </div>
@@ -266,7 +269,7 @@
         <footer>
             <div class="container footer-content">
                 <div class="footer-logo">NOAH<span>.</span></div>
-                <p>&copy; 2026 NOAH DEV. Feito com paixão.</p>
+                <p>&copy; 2026 NOAH DEV. Todos os direitos reservados.</p>
                 <div class="footer-back-to-top">
                     <a href="#hero">Voltar ao Topo &uarr;</a>
                 </div>
@@ -276,4 +279,5 @@
 
     <script src="main.js"></script>
 </body>
+
 </html>
